@@ -32,9 +32,32 @@
             display: flex;
         }
         .collums{
+            display: flex;
+            flex-wrap: wrap;
             width: 33%;
-            padding: 10px;
-            margin-left: 10px;
+            margin-left: 20px;
+        }
+        .attacment{
+            display: flex;
+            width: 33%;
+            flex-direction: column;
+            margin-left: 20px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        .attacment ul{
+            list-style-image: url(assets/img/icon2.png);
+        }
+        .collums img{
+            width: 150px;
+            height: 100px;
+            margin: 10px;
+        }
+        .border{
+            border: 1px solid black
         }
     </style>
 </head>
@@ -46,7 +69,7 @@
             </div>
             <div style="width:70%">
                 <div class="displaybox">
-                    <h1>Profile Name</h1>
+                    <h1>Raka Agus</h1>
                     <h5>Category</h5>
                 </div>
                 <div class="displayend" style=" margin-top: -50px;">
@@ -92,27 +115,30 @@
                     Your Browser Does Not Support The Video Tag.
                 </video>
             </div>
-            <div class="collums" style="border: 1px solid black">
-                <img widht="100" src="assets/img/kucing.jfif" alt="">
-                <img widht="100" src="assets/img/kucing.jfif" alt="">
-                <img widht="100" src="assets/img/kucing.jfif" alt="">
-                <img widht="100" src="assets/img/kucing.jfif" alt="">
+            <div class="collums border" >
+                    <img src="assets/img/kucing.jfif" alt="">
+                    <img src="assets/img/kucing.jfif" alt="">
+                    <img src="assets/img/kucing.jfif" alt="">
+                    <img src="assets/img/kucing.jfif" alt="">
             </div>
-            <div class="collums" style="border: 1px solid black">
-                <h3>Attachments</h3>
+            <fieldset class="attacment border" >
+                <legend>Attachments</legend>
                 <audio controls>
                     <source src="assets/audio/audio.mp3" type="audio/mp3" >
                     Your browser does not support the audio element.
                 </audio>
-                <audio controls>
-                    <source src="assets/audio/audio.mp3" type="audio/mp3" >
-                    Your browser does not support the audio element.
-                </audio>
-                <audio controls>
-                    <source src="assets/audio/audio.mp3" type="audio/mp3" >
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
+                <ul>
+                    <li>
+                        <a href="/assets/document/02_htmldasar.pdf">02_htmldasar</a>
+                    </li>
+                    <li>
+                        <a href="/assets/document/04_multimedia_html5.pdf">04_multimedia_html5</a>
+                    </li>
+                    <li>
+                        <a href="/assets/document/06_dasar_css.pdf">06_dasar_css</a>
+                    </li>
+                </ul>
+            </fieldset>
         </div>
     </div>
 </body>
